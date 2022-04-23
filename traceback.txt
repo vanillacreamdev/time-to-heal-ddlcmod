@@ -1,0 +1,29 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/splash.rpy", line 9, in script
+    init -100 python:
+  File "game/splash.rpy", line 13, in <module>
+    raise Exception("DDLC RPA files were not found in the game folder. Check your installation and try again.")
+Exception: DDLC RPA files were not found in the game folder. Check your installation and try again.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "/home/wil/Documents/DDLC Modding/Assets/DDLCModTemplate-3.0.1/renpy/bootstrap.py", line 295, in bootstrap
+    renpy.main.main()
+  File "/home/wil/Documents/DDLC Modding/Assets/DDLCModTemplate-3.0.1/renpy/main.py", line 419, in main
+    game.context().run(node)
+  File "game/splash.rpy", line 9, in script
+    init -100 python:
+  File "/home/wil/Documents/DDLC Modding/Assets/DDLCModTemplate-3.0.1/renpy/ast.py", line 814, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/home/wil/Documents/DDLC Modding/Assets/DDLCModTemplate-3.0.1/renpy/python.py", line 1719, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/splash.rpy", line 13, in <module>
+    raise Exception("DDLC RPA files were not found in the game folder. Check your installation and try again.")
+Exception: DDLC RPA files were not found in the game folder. Check your installation and try again.
+
+Linux-5.17.4-300.fc36.x86_64-x86_64-with-fedora-36-Thirty_Six
+Ren'Py 6.99.12.4.2187
+ 
